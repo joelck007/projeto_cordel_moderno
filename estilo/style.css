@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Passero+One&family=Passion+One&family=Poppins:wght@300;500;800&family=Sriracha&display=swap');
+
+:root{
+    --fonte1 : Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:   'Poppins', sans-serif;
+    --fonte3:  'Sriracha', cursive;
+}
+*{
+   margin: 0;
+   padding: 0;
+   font-size: 1em;
+}
+
+html,body{
+    min-height: 100vh;/*altura*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;/* espaço cima*/
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px;/*espaço pra baixo*/
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom:10vh;/*dando um espaço em cima e pra baisxo do texto*/
+    line-height: 2em;/*espacamento entre linhas do texto*/
+    padding-left: 30px;/*afastar um pouco da coluna*/
+    font-family: var(--fonte3);
+    font-size: 2.5vw;
+}
+
+::selection > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(53, 51, 51);
+    color: aliceblue;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);/*sobra da imagem com a borda*/
+    background-size: cover;
+    background-attachment: fixed;/*efeito parallax, parece q a imagem anda, mas ela ta fixa*/
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.568);/* é o quadadro preto trasparente*/
+    text-shadow: 2px 2px 0px rgb(5, 5, 2);/*formato da letra com efeito*/
+    
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
